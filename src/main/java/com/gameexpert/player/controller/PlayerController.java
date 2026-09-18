@@ -27,7 +27,7 @@ public class PlayerController {
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
 
-    // player 확인용 임시 메서드
+    // 등록된 player 확인용 임시 메서드
     @GetMapping("/players")
     public ResponseEntity<List<CreatePlayerRequest>> getAllPlayers() {
         List<CreatePlayerRequest> players = playerService.findAll();
